@@ -1,4 +1,4 @@
-from source.arithmetic import add, subtract
+from source.arithmetic import add, multiply
 
 
 def describe_add():
@@ -14,9 +14,9 @@ def describe_add():
         assert 12 == add(2, 10)
 
 
-def describe_subtract():
+def describe_multiply():
     def two_numbers():
-        assert 2 == subtract(3, 1)
+        assert 3 == multiply(3, 1)
 
     def two_other_numbers():
         # Generally, assertions should be (expected, actual) vs
@@ -26,4 +26,4 @@ def describe_subtract():
         # but in the case of a failure, the actual value might
         # be printed to the log as a giant mountain of text, making
         # it hard to find the expected value
-        assert 1 == subtract(10, 9)
+        assert 90 == multiply(10, 9)

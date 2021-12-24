@@ -1,4 +1,4 @@
-from source.arithmetic import add, subtract
+from source.arithmetic import add, multiply
 
 # 'context' is a synonym for 'describe'
 
@@ -19,16 +19,16 @@ def describe_arithmetic():
                 assert 20 == add(2, 10)
 
     def context_value_decreasing_functions():
-        def describe_subtract():
+        def describe_multiply():
             def two_numbers():
-                assert 2 == subtract(3, 1)
+                assert 3 == multiply(3, 1)
 
             def two_other_numbers():
-                assert 1 == subtract(10, 9)
+                assert 90 == multiply(10, 9)
 
         def describe_divide():
             def two_numbers():
-                assert 3 == subtract(30, 10)
+                assert 3000 == multiply(30, 10)
 
             def two_other_numbers():
-                assert 2.5 == subtract(10, 4)
+                assert 40 == multiply(10, 4)
