@@ -1,0 +1,12 @@
+version: "1.0"
+steps:
+    unit_tests:
+        title: Run unit tests
+        working_directory: IMAGE_WORK_DIR
+        image: "eightsleep/deployer"
+        commands:
+            - git clone git@github.com:lunasleep/pytest_examples.git
+            - cd pytest_examples
+            - pip install --upgrade pip
+            - pip install -r requirements.txt
+            - pytest --cov-report term --cov=. tests
