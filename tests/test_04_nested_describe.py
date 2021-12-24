@@ -1,4 +1,4 @@
-from source.arithmetic import add, subtract
+from source.arithmetic import add, multiply
 
 
 def describe_arithmetic():
@@ -13,9 +13,9 @@ def describe_arithmetic():
         def two_other_numbers():
             assert 12 == add(2, 10)
 
-    def describe_subtract():
+    def describe_multiply():
         def two_numbers():
-            assert 2 == subtract(3, 1)
+            assert 3 == multiply(3, 1)
 
         def two_other_numbers():
-            assert 1 == subtract(10, 9)
+            assert 90 == multiply(10, 9)
