@@ -51,8 +51,6 @@ class Polynomial:
 
     def __add__(self, other_polynomail):
         new_polynomial = self.copy()
-        print(new_polynomial._coefficients)
-        print(other_polynomail._coefficients)
         for i in range(max(len(new_polynomial._coefficients), len(other_polynomail._coefficients))):
             if i >= len(other_polynomail._coefficients):
                 break
